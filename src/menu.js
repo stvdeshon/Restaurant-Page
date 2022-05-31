@@ -9,6 +9,7 @@ function menuPage() {
     const hotwings = document.createElement('div');
     hotwings.classList.add('menu-div');
     const hotHeading = document.createElement('h2');
+    // hotHeading.classList.add('menu-head');
     hotHeading.textContent = 'Our Wings';
     hotwings.appendChild(hotHeading);
     const hotMenu = document.createElement('p');
@@ -41,10 +42,22 @@ function menuPage() {
 
     content.appendChild(menu);
 
-    // const home = document.querySelector('.home');
-    // const contact = document.querySelector('.contact');
-    // home.classList.add('off');
-    // contact.classList.add('off');
+    //menu images
+    const menuImgs =  document.createElement('div');
+    menuImgs.classList.add('menu-img-container');
+    const wingImg01 = document.createElement('img');
+    wingImg01.src = './imgs/hotwings01.png';
+    wingImg01.classList.add('menu-img')
+    const wingImg02 = document.createElement('img');
+    wingImg02.src = './imgs/hotwings02.png';
+    wingImg02.classList.add('menu-img')
+    const fajitaImg = document.createElement('img');
+    fajitaImg.src = './imgs/fajita.png';
+    fajitaImg.classList.add('fajita-img')
+    menuImgs.appendChild(wingImg01);
+    menuImgs.appendChild(wingImg02);
+    menuImgs.appendChild(fajitaImg);
+    menu.appendChild(menuImgs);
 
 }
 
